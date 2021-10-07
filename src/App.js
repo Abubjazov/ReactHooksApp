@@ -1,12 +1,17 @@
+import React from 'react'
 import './App.css'
-import { useState } from 'react'
+import Main from './code_samples/Main'
+import Alert from './code_samples/Alert/Alert'
+import { AlertProvider } from './code_samples/Alert/AlertContext'
 
-function App() {
-  
+function App() {  
   return (
-    <div className="App">
-      
-    </div>
+    <AlertProvider>
+      <div className="App">
+        <Alert />
+        <Main />
+      </div>
+      </AlertProvider>
   )
 }
 
