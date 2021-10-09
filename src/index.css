@@ -32,7 +32,6 @@ code {
   justify-content: center;
   width: 200px;
   height: 200px;
-  animation: square 500ms ease-out forwards;
 }
 
 .square.blue {
@@ -41,6 +40,14 @@ code {
 
 .square.orange {
   background: coral;
+}
+
+.square.entering {
+  animation: square 500ms ease-out forwards;
+}
+
+.square.exiting {
+  animation: square 300ms ease-in alternate-reverse;
 }
 
 @keyframes square {
